@@ -3,16 +3,24 @@ package learning.java;
 import java.util.Scanner;
 
 public class HangMan {
+    private int antallFeilGjettinger = 5;
 
+    private char[] fasitArray;
+    private char[] riktigArray;
+    private char[] gjettetArray;
+    public HangMan(String settning){
+        fasitArray = settning.toCharArray();
+        riktigArray = new char[fasitArray.length];
+        gjettetArray = new char[antallFeilGjettinger];
+    };
     private String fasitSetning;
     public int feilForsøk = 0;
 
     private static Scanner scan = new Scanner(System.in);
 
     public static void main(String[] args){
-        HangMan hm = new HangMan();
         System.out.print("Velkommen til HengMann 1.0. Tast inn ordet eller setningen du ønsker å gjette mot: ");
-        hm.fasitSetning = scan.nextLine().toUpperCase();
+        HangMan hm = new HangMan(scan.nextLine().toUpperCase());
         char[] fasitArray = hm.fasitSetning.toCharArray();
         char[] riktigArray = new char[fasitArray.length];
         char[] gjettetArray = new char[10];
