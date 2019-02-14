@@ -14,7 +14,12 @@ public class HangControllers extends HangMan{
     }
 
     public boolean harDuVunnet(char[] array){
-
+        for (char i:array){
+            if (i == '\u0000'){
+                return false;
+            }
+        }
+        return true;
     }
 
     public boolean harDuTapt(int feilForsøk){
