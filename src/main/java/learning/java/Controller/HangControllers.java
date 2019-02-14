@@ -1,9 +1,16 @@
 package learning.java.Controller;
 
-public class HangControllers {
+import learning.java.HangMan;
 
-    public boolean sjekkBokstav(){
+public class HangControllers extends HangMan{
 
+    public boolean sjekkBokstav(char[] fasitArray,char bokstav){
+        for (int i = 0;i<fasitArray.length;i++){
+            if(fasitArray[i]==bokstav){
+                return true;
+            }
+        }
+        return false;
     }
 
     public boolean harDuVunnet(){
