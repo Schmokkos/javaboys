@@ -2,7 +2,7 @@ package learning.java.Controller;
 
 import learning.java.HangMan;
 
-public class HangControllers extends HangMan{
+public class HangControllers {
 
     public boolean sjekkBokstav(char[] fasitArray,char bokstav){
         for (char i:fasitArray){

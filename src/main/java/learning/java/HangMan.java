@@ -8,22 +8,24 @@ public class HangMan {
     private char[] fasitArray;
     private char[] riktigArray;
     private char[] gjettetArray;
-    public HangMan(String settning){
+    private HangMan(String settning){
         fasitArray = settning.toCharArray();
         riktigArray = new char[fasitArray.length];
         gjettetArray = new char[antallFeilGjettinger];
-    };
-    private String fasitSetning;
-    public int feilForsøk = 0;
+    }
+//    private String fasitSetning;
+//    public int feilForsøk = 0;
 
     private static Scanner scan = new Scanner(System.in);
 
     public static void main(String[] args){
         System.out.print("Velkommen til HengMann 1.0. Tast inn ordet eller setningen du ønsker å gjette mot: ");
         HangMan hm = new HangMan(scan.nextLine().toUpperCase());
-        char[] fasitArray = hm.fasitSetning.toCharArray();
-        char[] riktigArray = new char[fasitArray.length];
-        char[] gjettetArray = new char[10];
+
+//        Flyttet til class HangMan
+//        char[] fasitArray = hm.fasitSetning.toCharArray();
+//        char[] riktigArray = new char[fasitArray.length];
+//        char[] gjettetArray = new char[10];
 
 
 
