@@ -13,6 +13,17 @@ public class HangMan {
         riktigArray = new char[fasitArray.length];
         gjettetArray = new char[antallFeilGjettinger];
     }
+    public void printCharInFasit(char bokstav){
+        for (char c:fasitArray){
+            if (c == bokstav)
+                System.out.print(c+" ");
+            else if (c == ' '){
+                System.out.print("   ");
+            }
+            else System.out.print("_ ");
+        }
+
+    }
 //    private String fasitSetning;
 //    public int feilForsøk = 0;
 
@@ -30,16 +41,9 @@ public class HangMan {
 
 
 //        System.out.println("Gjett en bokstav: ");
-//        char bokstav = scan.next().toUpperCase().charAt(0);
-//
-//        for (char c:fasitArray){
-//            if (c == bokstav)
-//                System.out.print(c+" ");
-//            else if (c == ' '){
-//                System.out.print("   ");
-//            }
-//            else System.out.print("_ ");
-//        }
+        char bokstav = scan.next().toUpperCase().charAt(0);
+        hm.printCharInFasit(bokstav);
+
 
        // System.out.println("Hei");
     }
