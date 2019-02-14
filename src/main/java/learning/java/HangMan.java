@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class HangMan {
 
     private String fasitSetning;
-    private int feilForsøk = 0;
+    public int feilForsøk = 0;
 
     private static Scanner scan = new Scanner(System.in);
 

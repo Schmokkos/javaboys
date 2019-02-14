@@ -17,8 +17,12 @@ public class HangControllers extends HangMan{
 
     }
 
-    public boolean harDuTapt(){
-
-
+    public boolean harDuTapt(int feilForsøk){
+        if (feilForsøk >= 10){
+            return true;
+        }
+        else {
+            return false
+        }
     }
 }
