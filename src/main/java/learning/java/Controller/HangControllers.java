@@ -25,4 +25,5 @@ public class HangControllers {
     public boolean harDuTapt(int feilForsøk){
         return (feilForsøk >= 10);
     }
+
 }

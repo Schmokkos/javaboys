@@ -11,4 +11,15 @@ public class HangManObject {
         riktigArray = new char[fasitArray.length];
         gjettetArray = new char[antallFeilGjettinger];
     }
+    public void printCharInFasit(char bokstav){
+        for (char c:fasitArray){
+            if (c == bokstav)
+                System.out.print(c+" ");
+            else if (c == ' '){
+                System.out.print("   ");
+            }
+            else System.out.print("_ ");
+        }
+
+    }
 }
