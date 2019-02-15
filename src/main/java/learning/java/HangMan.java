@@ -2,6 +2,9 @@ package learning.java;
 
 import java.util.Scanner;
 
+import learning.java.Classes.HangManObject;
+import learning.java.Controller.HangControllers;
+
 public class HangMan {
     private int antallFeilGjettinger = 5;
 

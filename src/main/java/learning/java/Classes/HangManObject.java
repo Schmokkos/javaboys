@@ -1,6 +1,6 @@
 package learning.java.Classes;
 
-class HangManObject {
+public class HangManObject {
     private int antallFeilGjettinger = 5;
 
     private char[] fasitArray;
@@ -10,5 +10,5 @@ class HangManObject {
         fasitArray = settning.toCharArray();
         riktigArray = new char[fasitArray.length];
         gjettetArray = new char[antallFeilGjettinger];
-    };
+    }
 }
